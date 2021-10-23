@@ -57,8 +57,12 @@
                 href="index.html"
                 class="inline-block text-2xl font-bold tracking-wider uppercase text-primary-dark dark:text-light"
               >
-                 
-                <img src="build/images/Logo-BBVA.jpg" alt="" style="height: 50px; width: auto;">
+              <!-- <img src="build/images/Logo-BBVA.jpg" alt="" style="height: 50px; width: auto;"> -->
+                <img src="build/images/BBVA.png" alt="" style="height: 30px; width: auto;">
+                <!-- <img src="build/images/Vector-1.png" alt="" style="height: 50px; ">
+                <img src="build/images/Vector-2.png" alt="" style="height: 50px; ">
+                <img src="build/images/Vector-3.png" alt="" style="height: 50px; "> -->
+
               </a>
 
               <!-- Mobile sub menu button -->
@@ -153,7 +157,7 @@
                 </button>
 
                 <!-- Search button -->
-                <button
+                <!-- <button
                   @click="openSearchPanel"
                   class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker"
                 >
@@ -173,10 +177,12 @@
                       d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                     />
                   </svg>
-                </button>
+                </button> -->
 
+
+                
                 <!-- Settings button -->
-                <button
+                <!-- <button
                   @click="openSettingsPanel"
                   class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker"
                 >
@@ -202,7 +208,7 @@
                       d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                </button>
+                </button> -->
 
                 <!-- User avatar button -->
                 <div class="relative" x-data="{ open: false }">
@@ -361,6 +367,8 @@
                       />
                     </svg>
                   </button>
+
+
 
                   <!-- Settings button -->
                   <button
@@ -746,7 +754,7 @@
                       <button
                         class="relative focus:outline-none"
                         x-cloak
-                        @click="isOn = !isOn; $parent.updateLineChart()"
+                        @click="isOn = !isOn; $parent.updateLineChart"
                       >
                         <div
                           class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-darker"
