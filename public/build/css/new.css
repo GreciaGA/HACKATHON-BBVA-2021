@@ -1,0 +1,197 @@
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem; }
+
+
+    .table th,
+    .table td {
+      border-color: #eaeaea; 
+      padding: 08px;
+    }
+      [data-theme-version="dark"] .table th, [data-theme-version="dark"] .table td {
+        border-color: #424D63; }
+    
+    .table thead th {
+      border-bottom-width: 1px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-color: #eaeaea; }
+      [data-theme-version="dark"] .table thead th {
+        border-color: #424D63; }
+    
+    .table tbody tr td {
+      vertical-align: middle;
+      border-color: #eaeaea; 
+      height: 30px;
+      width: 100px; 
+    }
+
+      [data-theme-version="dark"] .table tbody tr td {
+        border-color: #424D63; }
+    
+    .table:not(.table-bordered) thead th {
+      border-top: none; }
+    
+    .table .thead-primary th {
+      background-color: #593bdb;
+      color: #fff; }
+    
+    .table.primary-table-bordered {
+      border: 1px solid #989ca0; }
+    
+    .table.primary-table-bg-hover thead th {
+      background-color: #4827d5;
+      color: #fff;
+      border-bottom: none; }
+    
+    .table.primary-table-bg-hover tbody tr {
+      background-color: #593bdb;
+      color: #fff;
+      transition: all .1s ease; }
+      .table.primary-table-bg-hover tbody tr:hover {
+        background-color: #6b51df; }
+      .table.primary-table-bg-hover tbody tr:not(:last-child) td, .table.primary-table-bg-hover tbody tr:not(:last-child) th {
+        border-bottom: 1px solid #4827d5; }
+    
+    .table-responsive-tiny {
+      min-width: 18.75rem; }
+    
+    .table-responsive-sm {
+      min-width: 30rem !important; }
+    
+    .table-responsive-md {
+      min-width: 50.9375rem !important; }
+    
+    .table-responsive-lg {
+      min-width: 60.9375rem !important; }
+    
+    .table-responsive-xl {
+      min-width: 70.9375rem !important; }
+    
+    .bootgrid-header {
+      padding: 0 !important;
+      margin: 0; }
+      @media only screen and (max-width: 575px) {
+        .bootgrid-header .actionBar {
+          padding: 0; }
+        .bootgrid-header .search {
+          margin: 0 0 10px 0; } }
+    
+    table#example {
+      padding: 3rem 0 4rem 0; }
+
+
+      /* EXTRA COMANDOS TABLAS */
+      /* **************************** */
+
+      #example2_wrapper .dataTables_scrollBody {
+        max-height: 33.25rem !important; }
+      
+      #employees, #custommers {
+        padding: .5rem 0 1rem 0; }
+      
+      table.dataTable thead th, table.dataTable thead td {
+        border-bottom: 0;
+        border-top: 0; }
+      
+      table.dataTable tfoot th, table.dataTable tfoot td {
+        border-top: 0; }
+      
+      table.dataTable tbody tr, table.dataTable tbody td {
+        background: transparent !important; }
+      
+      table.dataTable thead th {
+        color: #454545;
+        font-weight: 600; }
+        [data-theme-version="dark"] table.dataTable thead th {
+          color: #fff; }
+      
+      table.dataTable tbody td {
+        padding: 15px 18px; }
+      
+      table.dataTable tr.selected {
+        color: #593bdb; }
+      
+      table.dataTable tfoot th {
+        color: #454545;
+        font-weight: 600; }
+        [data-theme-version="dark"] table.dataTable tfoot th {
+          color: #fff; }
+      
+      .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+        border-radius: 50%;
+        color: #593bdb !important;
+        background: rgba(89, 59, 219, 0.1);
+        border: 0 !important; }
+      
+      .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+        border-radius: 50%;
+        color: #593bdb !important;
+        background: rgba(89, 59, 219, 0.1);
+        border: 0; }
+      
+      .dataTables_wrapper .dataTables_paginate .paginate_button {
+        border: 0; }
+      
+      .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover {
+        background: transparent; }
+      
+      .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
+        background: transparent; }
+      
+      .dataTables_wrapper input[type="search"], .dataTables_wrapper input[type="text"], .dataTables_wrapper select {
+        border: 1px solid #e2e2e2;
+        padding: .3rem 0.5rem;
+        color: #715d5d;
+        border-radius: 5px; }
+        [data-theme-version="dark"] .dataTables_wrapper input[type="search"], [data-theme-version="dark"] .dataTables_wrapper input[type="text"], [data-theme-version="dark"] .dataTables_wrapper select {
+          background: #2A2C32;
+          border-color: #424D63;
+          color: #fff; }
+      
+      table.dataTable.no-footer {
+        border-bottom: 0; }
+      
+      .dataTables_scroll {
+        padding: 2.5rem 0; }
+        .dataTables_scrollFoot {
+          padding-top: 1rem; }
+      
+      @media (max-width: 991.98px) {
+        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter {
+          text-align: left; } }
+      
+      table.dataTable.row-border tbody th,
+      table.dataTable.row-border tbody td,
+      table.dataTable.display tbody th,
+      table.dataTable.display tbody td {
+        border-color: #eaeaea; }
+        [data-theme-version="dark"] table.dataTable.row-border tbody th, [data-theme-version="dark"]
+        table.dataTable.row-border tbody td, [data-theme-version="dark"]
+        table.dataTable.display tbody th, [data-theme-version="dark"]
+        table.dataTable.display tbody td {
+          border-color: #424D63; }
+
+/* ************************************** */
+/* Comentario */
+
+.table {
+    border-collapse: collapse !important; }
+    .table td,
+    .table th {
+      background-color: var(--darker); }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid var(--darker); }
+  .table-dark {
+    color: inherit; }
+    .table-dark th,
+    .table-dark td,
+    .table-dark thead th,
+    .table-dark tbody + tbody {
+      border-color: var(--darker); }
+  .table .thead-dark th {
+    color: inherit;
+    border-color: #EEEEEE; }
