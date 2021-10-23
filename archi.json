@@ -1,0 +1,22 @@
+{
+    "fileLocations": [
+        {
+            "URIs": [
+                "s3://hackathon2021winteam365/base 01_V3.csv",
+                "s3://hackathon2021winteam365/base 02_V3.csv",
+                "s3://hackathon2021winteam365/base 03_V3.csv",
+                "s3://hackathon2021winteam365/base 04_V3.csv",
+                "s3://hackathon2021winteam365/base 05_V3.csv",
+                "s3://hackathon2021winteam365/base 06_V3.csv"
+
+            ]
+        }
+
+    ],
+    "globalUploadSettings": {
+        "format": "CSV",
+        "delimiter": "|",
+        "containsHeader": "true"
+    }
+}
+                            
