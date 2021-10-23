@@ -21,7 +21,7 @@ const randomData = () => {
   ]
 }
 
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const months = ['User1', 'User2', 'User3', 'User4', 'User5', 'User6', 'User7', 'User8', 'User9', 'User10', 'User11', 'User12']
 
 const cssColors = (color) => {
   return getComputedStyle(document.documentElement).getPropertyValue(color)
@@ -91,7 +91,7 @@ const barChart = new Chart(document.getElementById('barChart'), {
 const doughnutChart = new Chart(document.getElementById('doughnutChart'), {
   type: 'doughnut',
   data: {
-    labels: ['Oct', 'Nov', 'Dec'],
+    labels: ['Grupo 1', 'Grupo 2', 'Grupo 3'],
     datasets: [
       {
         data: [random(), random(), random()],
