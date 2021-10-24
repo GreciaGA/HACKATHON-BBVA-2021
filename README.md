@@ -1,14 +1,14 @@
 # HACKATHON-BBVA-2021
 Reto Vinculación Rentable
 
-# Link público (desplegado) en QuickSight:
+## Link público (desplegado) en QuickSight:
 [Abrir el QuicSight](https://2ub8uo9fzf.execute-api.us-east-2.amazonaws.com/test/embed-sample#)
 
 Recuerda ingresar con el:
 Usuario: DemoUser
 Password: P@ssw0rd123
 
-# Presentación en Genially
+## Presentación en Genially
 [Diapositivas](https://view.genial.ly/6174f6f548d1740ddde1a1bb)
 
 ## Integrantes:
