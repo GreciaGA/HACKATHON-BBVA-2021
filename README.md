@@ -8,5 +8,5 @@ Reto Vinculación Rentable
 * Samuel Sánchez
 * Susan Baldeón
 
-![Integrantes del equipo: winteam](https://github.com/Grecia2727/lim.png)
+![Integrantes del equipo: winteam](https://github.com/GreciaGA/HACKATHON-BBVA-2021/blob/main/public/build/images/fotogrupal.jpg)
 
