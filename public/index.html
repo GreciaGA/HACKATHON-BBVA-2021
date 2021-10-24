@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>WINTEAM-BBVA</title>
+    
+    <script src="https://unpkg.com/amazon-quicksight-embedding-sdk@1.18.0/dist/quicksight-embedding-js-sdk.min.js"></script> 
+    <script type="text/javascript"> 
+        var dashboard 
+        function onDashboardLoad(payload) { 
+            console.log("Do something when the dashboard is fully loaded."); 
+        } 
+
+        function onError(payload) { 
+            console.log("Do something when the dashboard fails loading"); 
+        } 
+
+        function embedDashboard() { 
+            var containerDiv = document.getElementById("embeddingContainer"); 
+            var options = { 
+                url: "https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/dashboardId?isauthcode=true&identityprovider=quicksight&code=authcode", 
+                container: containerDiv, 
+                parameters: { 
+                    country: "United States" 
+                }, 
+                scrolling: "no", 
+                height: "700px", 
+                width: "1000px", 
+                locale: "en-US", 
+                footerPaddingEnabled: true 
+            }; 
+            dashboard = QuickSightEmbedding.embedDashboard(options); 
+            dashboard.on("error", onError); 
+            dashboard.on("load", onDashboardLoad); 
+        } 
+
+        function onCountryChange(obj) { 
+            dashboard.setParameters({country: obj.value}); 
+        } 
+    </script>
+
+
+
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
@@ -16,6 +53,8 @@
     <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.5.x/dist/component.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
   </head>
+
+
   <body>
     <div x-data="setup()" x-init="$refs.loading.classList.add('hidden'); setColors(color);" :class="{ 'dark': isDark}">
       <div class="flex h-screen antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light">
@@ -704,9 +743,9 @@
 
               <!-- Two grid columns -->
               <div class="grid grid-cols-1 p-4 space-y-8 lg:gap-8 lg:space-y-0 lg:grid-cols-3">
-                <!-- Active users chart -->
+                
                 <div class="col-span-1 bg-white rounded-md dark:bg-darker">
-                  <!-- Card header -->
+                  
                   <div class="p-4 border-b dark:border-primary">
                     <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Tipos de Clientes</h4>
                   </div>
@@ -714,7 +753,7 @@
                     <span class="text-2xl font-medium text-gray-500 dark:text-light" id="usersCount">8,9%</span>
                     <span class="text-sm font-medium text-gray-500 dark:text-primary">Rentabilidad</span>
                   </p>
-                  <!-- Chart -->
+                 
                   <div class="relative p-4">
                     <canvas id="activeUsersChart"></canvas>
                   </div>
@@ -759,10 +798,10 @@
                                   <table class="table mb-0">
                                       <thead>
                                           <tr>
-                                              <th>#</th>
-                                              <th>Dato1</th>
-                                              <th>Dato2</th>
-                                              <th>Dato3</th>
+                                              <th>Foto</th>
+                                              <th>Tipo Cliente</th>
+                                              <th>Desde</th>
+                                              <th>Cantidad</th>
                                               <th>Status</th>
                                           </tr>
                                       </thead>
@@ -831,7 +870,7 @@
                                                   </div>
                                               </td>
                                               <td>Cliente Rentable</td>
-                                              <td><span>Asus-565</span></td>
+                                              <td><span>Cliente desde el 2020</span></td>
                                               <td><span>456 pcs</span></td>
                                               <td><span class="badge badge-warning">Pending</span></td>
                                           </tr>
